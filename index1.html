@@ -1,0 +1,26 @@
+<!-- Se deben de crear un formulario en HTML y llamar desde ahí el script PHP
+mediante el método POST. Ejemplo: Un formulario que pida digitar nuestro nombre
+y al dar clic sobre un botón submit me de cómo respuesta, mediante un script de
+PHP, un saludo que diga: Hola instructor Fabio. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection between PHP and HTML. </title>
+</head>
+
+<body>
+    <header>
+        <h1>Validation Form</h1>
+        <form action="./includes/funcion1.php" method="post">
+            <label for="name">Write a name</label>
+            <input type="text" name="texto" required>
+            <input type="submit" value="Send" name="enviar">
+    </header>
+    </form>
+</body>
+
+</html>
